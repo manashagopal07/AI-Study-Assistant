@@ -16,8 +16,7 @@ app = Flask(__name__)
 # ---------------- HOME ----------------
 @app.route("/")
 def home():
-    return render_template("index.html")
-
+    return "Hello from Flask!"
 
 # ---------------- SUMMARY (DIFFICULTY) ----------------
 @app.route("/summary", methods=["POST"])
